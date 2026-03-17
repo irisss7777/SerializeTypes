@@ -6,6 +6,6 @@ SerializeTypes is a small but powerful Unity plugin that allows you to serialize
 
 ## ✨ Features
 Type‑safe – store references to types that inherit from a specific base class.
-Editor dropdown – powered by **[NaughtyAttributes]([https://github.com/Cysharp/MessagePipe](https://github.com/dbrizov/NaughtyAttributes))** – no custom inspectors required.
+Editor dropdown – powered by **[NaughtyAttributes]([https://github.com/dbrizov/NaughtyAttributes])** – no custom inspectors required.
 Cached reflection – the list of available types is built once per T and reused.
 Seamless integration – works inside ScriptableObject, MonoBehaviour, or any serializable
