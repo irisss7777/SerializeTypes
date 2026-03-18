@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.Profiling;
 
 namespace Plugins.SerializeTypes
 {
@@ -15,6 +16,11 @@ namespace Plugins.SerializeTypes
         
         private static List<Type> _cachedTypes;
         private static List<string> _cachedNames;
+
+        public void Initialize()
+        {
+            EnsureCache();
+        }
 
         private void EnsureCache()
         {
