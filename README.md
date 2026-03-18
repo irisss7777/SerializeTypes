@@ -65,3 +65,14 @@ public class ReactionSet : ScriptableObject
     public List<SerializeType<AEnemyReaction>> availableReactions;
 }
 ```
+
+5. Add an InitializeCache method to your bootstrapper so that reflection is triggered before the application starts.
+
+```csharp
+[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+private static void InitializeCache()
+{
+    new SerializeType<AEnemyReaction>().Initialize();
+}
+```
+
